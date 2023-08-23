@@ -1,0 +1,12 @@
+step "send-an-email" {
+    name = "Send an Email"
+
+    action {
+        action_type = "Octopus.Email"
+        properties = {
+            Octopus.Action.Email.IsHtml = "False"
+            Octopus.Action.Email.Subject = "Test Octopus deploy step "
+            Octopus.Action.Email.To = "vishneuski87@gmail.com"
+        }
+    }
+}
